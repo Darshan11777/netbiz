@@ -23,6 +23,9 @@
 
   --entpIcon: url("data:image/svg+xml,%3Csvg width='42' height='42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.813 11.077 21 1.155l17.187 9.922v19.846L21 40.845 3.813 30.923V11.077Z' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='21' cy='21' r='8' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
 }
+.header{
+    /* margin-top: 90px; */
+}
 
 
 /*** Spinner ***/
@@ -106,6 +109,11 @@ h6,
 
 
 /*** Navbar ***/
+
+nav{
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;   
+    background-color: white;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -120,26 +128,27 @@ h6,
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif !important;
     font-size: 18px;
     font-weight: 500;
-    color: var(--light) !important;
+    color: #ff8c00 !important;
     outline: none;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 20px 0;
+    padding: 15px 0;
     color: var(--dark) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
+    color: green!important;
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #ff8c00;
+    font-size: 45px !important;
 }
 
 .navbar-light .navbar-brand img {
@@ -154,12 +163,12 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        background: #ff8c00;
     }
 
     .navbar-light .navbar-collapse {
         margin-top: 15px;
-        border-top: 1px solid #DDDDDD;
+        border-top: 1px solid #ff8c00;
     }
 
     .navbar-light .navbar-nav .nav-link,
